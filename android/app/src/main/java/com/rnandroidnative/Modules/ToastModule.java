@@ -1,4 +1,4 @@
-package com.rnandroidnative;
+package com.rnandroidnative.Modules;
 import android.widget.Toast;
 
 import com.facebook.react.bridge.ReactApplicationContext;

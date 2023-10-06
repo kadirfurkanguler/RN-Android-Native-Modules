@@ -2,7 +2,7 @@ package com.rnandroidnative;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
-import com.rnandroidnative.ToastPackage; // ToastPackage.java dosyasını içe aktarın
+import com.rnandroidnative.Modules.RnAppModules; 
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -25,10 +25,7 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
           @SuppressWarnings("UnnecessaryLocalVariable")
           List<ReactPackage> packages = new PackageList(this).getPackages();
-          // packages.add(new ToastModule());
-          // ToastPackage'i eklerken ReactApplicationContext ile başlatın
-          // packages.add(new ToastPackage(this.getReactNativeHost().getReactInstanceManager().getCurrentReactContext()));
-          packages.add(new ToastPackage());
+          packages.add(new RnAppModules());
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
           return packages;
